@@ -1064,15 +1064,25 @@ p {
 
   /* WORKS */
 
-  .work-img-container {
+  /* .work-img-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 40rem));
-    /* grid-template-rows: repeat(4, min-content); */
     gap: 2rem;
   }
+
   .my-works-img {
     grid-column: auto;
     grid-row: auto;
+  } */
+
+  .work-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .my-works-img {
+    width: 80%;
   }
 
   /* CONTACT-CENTER */
@@ -1082,6 +1092,14 @@ p {
 
   .testimonial {
     max-width: 80%;
+  }
+
+  .contact-info {
+    flex: 0 1 50%;
+  }
+
+  .contact-info .contact-title {
+    font-size: 1.6rem;
   }
 
   /* FOOTER */
