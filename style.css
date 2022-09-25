@@ -775,7 +775,7 @@ p {
 ********************************
 ********************************************************/
 .footer {
-  min-height: 100vh;
+  min-height: 85vh;
   background: linear-gradient(
       to bottom,
       var(--clr-secondary),
@@ -994,6 +994,10 @@ p {
     transform: rotate(-50deg) translateX(-0.1rem) translateY(-0.5rem);
   }
 
+  .hero-center {
+    padding-left: 5rem;
+  }
+
   /*********** INFO SECTION **********/
   .personal-info {
     display: block;
@@ -1082,7 +1086,7 @@ p {
   }
 
   .my-works-img {
-    width: 80%;
+    width: 90%;
   }
 
   /* CONTACT-CENTER */
