@@ -1079,6 +1079,10 @@ p {
     grid-row: auto;
   } */
 
+  .works-areas {
+    max-width: 80%;
+  }
+
   .work-img-container {
     display: flex;
     flex-direction: column;
