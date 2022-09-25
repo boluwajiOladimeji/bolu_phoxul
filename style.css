@@ -927,6 +927,10 @@ p {
     padding: 3.5rem 6rem;
   }
 
+  .header {
+    padding-left: 5rem;
+  }
+
   .main-nav {
     flex-direction: column;
     justify-content: center;
