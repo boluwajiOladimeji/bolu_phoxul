@@ -1,0 +1,68 @@
+h1 {
+  font-size: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  display: inline-block;
+  background: grey;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  color: #eee;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+  border: 0.5px solid transparent;
+  font-size: 17px;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  background: #eee;
+  border: solid 0.5px grey;
+  color: grey;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+.img-container::after {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  opacity: 0.5;
+  transition: all 0.3s linear;
+  transform: rotate(90deg);
+}
+
+.img-container:hover::after {
+  top: 0;
+  transform: rotate(0);
+}
+
+.img-container h2 {
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  /* left: 0; */
+  color: white;
+  transform: translate(50%, -50%);
+  transition: all 0.5s linear;
+}
+
+.img-container:hover h2 {
+  right: 50%;
+  /* transform:translate(-50) ; */
+}
